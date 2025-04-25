@@ -12,7 +12,7 @@ const Banner = () => {
       setCurrentImageIndex((prevIndex) =>
         (prevIndex + 1) % imageGallary.length
       );
-    }, 3000); // Change every 2 seconds
+    }, 3000); // Change every 3 seconds
 
     return () => clearInterval(interval); // Cleanup on unmount
   }, []);
